@@ -8,41 +8,7 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |                                                                               **설명**                                                                              |
-| :---------------: | :----: | :----: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|      clientId     | String |    O   |                                                    <p>BizCenter 에 접속하는 ID<br>(기업: 기업관리자 또는 기업담당자, 대행사: 대행사)</p>                                                   |
-|    clientSecret   | String |    O   |                                                      <p>BizCenter 에 접속한 ID 의 API Key<br>(내 정보관리에서 확인 가능)</p>                                                      |
-|      regBrand     | Object |    O   |                                                                            브랜드 등록 정보 객체                                                                           |
-|        name       | String |    O   |                                                                         브랜드 홈에 표시되는 브랜드 이름                                                                        |
-|    description    | String |    O   |                                                                         브랜드 홈에 표시되는 브랜드 설명                                                                        |
-|        tel        | String |    O   |                                                                    브랜드 홈에 노출될 전화번호 (대표 발번호와 별개)                                                                   |
-|       menus       |  Array |    X   |                 <p>메뉴 정보<br>(브랜드 홈에 최대 4개까지 표시, chat 은 기본 등록 되므로 지정할 수 있는 최대 menu는 3개이며, 등록 시 call을 포함하지 않고 2개 이하로 지정할 경우 call 을 기본으로 추가합니다.)</p>                 |
-|     buttonType    | String |    O   |                                              <p>챗봇 이름 <br>(call, web, app, store, order, buy, tickets, moreinfo)</p>                                              |
-|      applink      | Object |    X   |                                                                          APP Link의 패키지 정보                                                                         |
-|    packageName    | String |    O   |                                                                          APP 실행을 위한 패키지 명                                                                         |
-|       action      | String |    O   |                                                                         APP 실행을 위한 Action                                                                         |
-|        uri        | String |    O   |                                                                         APP 실행을 위한 URI 정보                                                                         |
-|      weblink      | String |    X   |                                             buttonType call 을 제외한 모든 버튼은 Web URL 을 입력. http:// 또는 https://로 시작되어야 합니다.                                            |
-|     categoryId    | String |    O   |                                                                            브랜드 카테고리 ID                                                                            |
-|   subCategoryId   | String |    O   |                                                                           브랜드 하위 카테고리 ID                                                                          |
-|    categoryOpt    | String |    X   |                                                                           검색용 키워드 임의 등록                                                                           |
-|      zipCode      | String |    X   |                                                                          브랜드 홈에 표시되는 우편번호                                                                         |
-|    roadAddress    | String |    X   |                                                                         브랜드 홈에 표시되는 도로명주소                                                                         |
-|   detailAddress   | String |    X   |                                                                          브랜드 홈에 표시되는 상세주소                                                                         |
-|       email       | String |    X   |                                                                         브랜드 홈에 표시되는 이메일주소                                                                         |
-|     webSiteUrl    | String |    X   |                                                                         브랜드 홈에 표시되는 홈페이지주소                                                                        |
-|    brandProfile   |  File  |    O   |                               <p>브랜드 프로필 이미지<br>최소사이즈 : 388X388px / 최대사이즈 : 1080X1080px / 1:1 비율 권장 / 파일형식 :png (최대 1048576Byte)</p>                              |
-|  brandBackground  |  File  |    O   | 등록되어 있는 브랜드 백그라운드 이미지를 제거하기 위해서는 파일 없이 brandBackground form key 만 송하면 됩니다. 최소사이즈 : 388X388px / 최대사이즈 : 1080X1080px / 1:1 비율 권장 / 파일형식 : jpg, png (최대 1048576Byte) |
-|      mainMdn      | String |    O   |                                                       <p>브랜드 대표 발신번호 입력된 번호는<br>chatbots 에 포함되어 있어야 합니다.</p>                                                      |
-|      chatbots     |  Array |    O   |                                                                     등록할 챗봇 정보 (최대 1000 개까지 등록)                                                                    |
-|        mdn        | String |    O   |                                                                         등록할 발번호 (국가번호 생략)                                                                         |
-|       subnum      | String |    X   |                                                                      챗봇 ID, A2P 의 경우 발번호와 동일                                                                      |
-|      subTitle     | String |    O   |                                                                                챗봇 명                                                                               |
-|      rcsReply     | String |    O   |                                                                 수신 모드 (SMS MO: 0, RCS Postback: 1)                                                                |
-|      display      | String |    X   |                                                                               전시 여부                                                                               |
-|      service      | String |    X   |                                                                          A2P/CHAT 서비스 유형                                                                          |
-|      webhook      | String |    X   |                                                                 service 가 'chat'인 경우 사용 (URL, 필수)                                                                 |
-| subNumCertificate |  File  |    O   |                                                                          통신 서비스 이용증명원 파일                                                                          |
+![](<.gitbook/assets/image (1).png>)
 
 ```json5
 {
@@ -110,42 +76,7 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |                                                                               **설명**                                                                              |
-| :---------------: | :----: | :----: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|      clientId     | String |    O   |                                                    <p>BizCenter 에 접속하는 ID<br>(기업: 기업관리자 또는 기업담당자, 대행사: 대행사)</p>                                                   |
-|    clientSecret   | String |    O   |                                                      <p>BizCenter 에 접속한 ID 의 API Key<br>(내 정보관리에서 확인 가능)</p>                                                      |
-|      brandId      | String |    O   |                                                                      BizCenter 에서 생성한 브랜드 ID                                                                      |
-|      regBrand     | Object |    O   |                                                                            브랜드 등록 정보 객체                                                                           |
-|        name       | String |    O   |                                                                         브랜드 홈에 표시되는 브랜드 이름                                                                        |
-|    description    | String |    O   |                                                                         브랜드 홈에 표시되는 브랜드 설명                                                                        |
-|        tel        | String |    O   |                                                                    브랜드 홈에 노출될 전화번호 (대표 발번호와 별개)                                                                   |
-|       menus       |  Array |    X   |                 <p>메뉴 정보<br>(브랜드 홈에 최대 4개까지 표시, chat 은 기본 등록 되므로 지정할 수 있는 최대 menu는 3개이며, 등록 시 call을 포함하지 않고 2개 이하로 지정할 경우 call 을 기본으로 추가합니다.)</p>                 |
-|     buttonType    | String |    O   |                                              <p>챗봇 이름 <br>(call, web, app, store, order, buy, tickets, moreinfo)</p>                                              |
-|      applink      | Object |    X   |                                                                          APP Link의 패키지 정보                                                                         |
-|    packageName    | String |    O   |                                                                          APP 실행을 위한 패키지 명                                                                         |
-|       action      | String |    O   |                                                                         APP 실행을 위한 Action                                                                         |
-|        uri        | String |    O   |                                                                         APP 실행을 위한 URI 정보                                                                         |
-|      weblink      | String |    X   |                                             buttonType call 을 제외한 모든 버튼은 Web URL 을 입력. http:// 또는 https://로 시작되어야 합니다.                                            |
-|     categoryId    | String |    O   |                                                                            브랜드 카테고리 ID                                                                            |
-|   subCategoryId   | String |    O   |                                                                           브랜드 하위 카테고리 ID                                                                          |
-|    categoryOpt    | String |    X   |                                                                           검색용 키워드 임의 등록                                                                           |
-|      zipCode      | String |    X   |                                                                          브랜드 홈에 표시되는 우편번호                                                                         |
-|    roadAddress    | String |    X   |                                                                         브랜드 홈에 표시되는 도로명주소                                                                         |
-|   detailAddress   | String |    X   |                                                                          브랜드 홈에 표시되는 상세주소                                                                         |
-|       email       | String |    X   |                                                                         브랜드 홈에 표시되는 이메일주소                                                                         |
-|     webSiteUrl    | String |    X   |                                                                         브랜드 홈에 표시되는 홈페이지주소                                                                        |
-|    brandProfile   |  File  |    O   |                               <p>브랜드 프로필 이미지<br>최소사이즈 : 388X388px / 최대사이즈 : 1080X1080px / 1:1 비율 권장 / 파일형식 :png (최대 1048576Byte)</p>                              |
-|  brandBackground  |  File  |    O   | 등록되어 있는 브랜드 백그라운드 이미지를 제거하기 위해서는 파일 없이 brandBackground form key 만 송하면 됩니다. 최소사이즈 : 388X388px / 최대사이즈 : 1080X1080px / 1:1 비율 권장 / 파일형식 : jpg, png (최대 1048576Byte) |
-|      mainMdn      | String |    O   |                                                       <p>브랜드 대표 발신번호 입력된 번호는<br>chatbots 에 포함되어 있어야 합니다.</p>                                                      |
-|      chatbots     |  Array |    O   |                                                                     등록할 챗봇 정보 (최대 1000 개까지 등록)                                                                    |
-|        mdn        | String |    O   |                                                                         등록할 발번호 (국가번호 생략)                                                                         |
-|       subnum      | String |    X   |                                                                      챗봇 ID, A2P 의 경우 발번호와 동일                                                                      |
-|      subTitle     | String |    O   |                                                                                챗봇 명                                                                               |
-|      rcsReply     | String |    O   |                                                                 수싞 모드 (SMS MO: 0, RCS Postback: 1)                                                                |
-|      display      | String |    X   |                                                                               전시 여부                                                                               |
-|      service      | String |    X   |                                                                          A2P/CHAT 서비스 유형                                                                          |
-|      webhook      | String |    X   |                                                                 service 가 'chat'인 경우 사용 (URL, 필수)                                                                 |
-| subNumCertificate |  File  |    O   |                                                                          통신 서비스 이용증명원 파일                                                                          |
+![](.gitbook/assets/image.png)
 
 ```json5
 {
@@ -341,21 +272,7 @@
 
 **Response**
 
-|    **키**   |     **-**     |                 |  **타입** |                         **설명**                        |
-| :--------: | :-----------: | :-------------: | :-----: | :---------------------------------------------------: |
-|    code    |               |                 |  String |                         결과 코드                         |
-|   message  |               |                 |  String |                      실패 시 결과 메시지                      |
-|    data    |               |                 |         |                        성공 시 데이터                       |
-|            |   categoryId  |                 |  String |                      브랜드 카테고리 ID                      |
-|            |  categoryName |                 |  String |                       브랜드 카테고리 명                      |
-|            | subCategories |                 |  Array  |                      브랜드 카테고리 목록                      |
-|            |               |  subCategoryId  |  String |                     브랜드 하위 카테고리 ID                    |
-|            |               | subCategoryName |  String |                     브랜드 하위 카테고리 명                     |
-|            |   updateDate  |                 |  String |                       카테고리 수정 일자                      |
-| pagination |               |                 |         |                                                       |
-|            |     limit     |                 | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset    |                 | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |     total     |                 | Integer |                          총 개수                         |
+![](<.gitbook/assets/image (2).png>)
 
 ### 권한 등록
 
