@@ -441,7 +441,7 @@
 |        mdn        | String |    O   |                                                                         등록할 발번호 (국가번호 생략)                                                                         |
 |       subnum      | String |    X   |                                                                      챗봇 ID, A2P 의 경우 발번호와 동일                                                                      |
 |      subTitle     | String |    O   |                                                                                챗봇 명                                                                               |
-|      rcsReply     | String |    O   |                                                                 수싞 모드 (SMS MO: 0, RCS Postback: 1)                                                                |
+|      rcsReply     | String |    O   |                                                                 수신 모드 (SMS MO: 0, RCS Postback: 1)                                                                |
 |      display      | String |    X   |                                                                               전시 여부                                                                               |
 |      service      | String |    X   |                                                                          A2P/CHAT 서비스 유형                                                                          |
 |      webhook      | String |    X   |                                                                 service 가 'chat'인 경우 사용 (URL, 필수)                                                                 |
