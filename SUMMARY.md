@@ -7,3 +7,4 @@
 * [파일 관리](undefined-2.md)
 * [메세지베이스 관리](undefined-3.md)
 * [기업 전용 브랜드 관리](undefined-4.md)
+* [개정 이력](undefined-5.md)
