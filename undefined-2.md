@@ -55,3 +55,8 @@
 |            |   offset   | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
 |            |    total   | Integer |                          총 개수                         |
 
+
+
+### RCS MMS 이미지 규격&#x20;
+
+![](<.gitbook/assets/image (5).png>)
