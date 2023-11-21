@@ -9,117 +9,38 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |               **설명**               |
-| :---------------: | :----: | :----: | :--------------------------------: |
-|      brandId      | String |    O   |       BizCenter 에서 생성한 브랜드 ID      |
-|      display      | String |    X   |                전시 여부               |
-|        mdn        | String |    O   |         등록할 발신번호 (국가번호는 생략)        |
-|      rcsReply     | String |    O   | 수신모드 설정 (SMS MO:0, RCS Postback:1) |
-|      service      | String |    X   |           A2P/CHAT 서비스 유형          |
-|       subNum      | String |    X   |      챗봇 ID (A2P의 경우 발신번호와 동일)      |
-| subNumCertificate |  File  |    O   |          통신 서비스 이용 증명원 파일          |
-|      subTitle     | String |    O   |                챗봇 명                |
-|      webhook      | String |    X   |    service가 chat인 경우 사용(URL, 필수)   |
+<table data-header-hidden><thead><tr><th width="205" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="363" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">display</td><td align="center">String</td><td align="center">X</td><td align="center">전시 여부</td></tr><tr><td align="center">mdn</td><td align="center">String</td><td align="center">O</td><td align="center">등록할 발신번호 (국가번호는 생략)</td></tr><tr><td align="center">rcsReply</td><td align="center">String</td><td align="center">O</td><td align="center">수신모드 설정 (SMS MO:0, RCS Postback:1)</td></tr><tr><td align="center">service</td><td align="center">String</td><td align="center">X</td><td align="center">A2P/CHAT 서비스 유형</td></tr><tr><td align="center">subNum</td><td align="center">String</td><td align="center">X</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center">subNumCertificate</td><td align="center">File</td><td align="center">O</td><td align="center">통신 서비스 이용 증명원 파일</td></tr><tr><td align="center">subTitle</td><td align="center">String</td><td align="center">O</td><td align="center">챗봇 명</td></tr><tr><td align="center">webhook</td><td align="center">String</td><td align="center">X</td><td align="center">service가 chat인 경우 사용(URL, 필수)</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |      **-**     |  **타입** |                         **설명**                        |
-| :--------: | :------------: | :-----: | :---------------------------------------------------: |
-|    code    |                |  String |                         결과 코드                         |
-|   message  |                |  String |                      실패 시 결과 메시지                      |
-|    data    |                |  Array  |                        성공 시 데이터                       |
-|            |  approvalDate  |  String |                        챗봇 승인 일시                       |
-|            | approvalResult |  String |                         승인 상태                         |
-|            |     brandId    |  String |                         브랜드 ID                        |
-|            |    chatbotId   |  String |                챗봇 ID (A2P의 경우 발신번호와 동일)               |
-|            |     display    |  String |                         전시 상태                         |
-|            |     groupId    |  String |                  챗봇이 대량 등록된 경우 그룹 ID                  |
-|            |    isMainNum   | Boolean |                       대표번호 여부 표시                      |
-|            |  registerDate  |  String |                        챗봇 등록 일시                       |
-|            |     subNum     |  String |           회신번호 A2P의 경우 발신번호 (chatbotId와 동일)           |
-|            |    subTitle    |  String |                          챗봇 명                         |
-|            |   updateDate   |  String |                        챗봇 수정일시                        |
-| pagination |                |         |                                                       |
-|            |      limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset     | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |      total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="205" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="242" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">챗봇 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">chatbotId</td><td align="center">String</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center"></td><td align="center">display</td><td align="center">String</td><td align="center">전시 상태</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">챗봇이 대량 등록된 경우 그룹 ID</td></tr><tr><td align="center"></td><td align="center">isMainNum</td><td align="center">Boolean</td><td align="center">대표번호 여부 표시</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">챗봇 등록 일시</td></tr><tr><td align="center"></td><td align="center">subNum</td><td align="center">String</td><td align="center">회신번호 A2P의 경우 발신번호 (chatbotId와 동일)</td></tr><tr><td align="center"></td><td align="center">subTitle</td><td align="center">String</td><td align="center">챗봇 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">챗봇 수정일시</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 챗봇 수정
 
 **Request**
 
-|       **키**       | **타입** | **필수** |                             **설명**                            |
-| :---------------: | :----: | :----: | :-----------------------------------------------------------: |
-|      brandId      | String |    O   |                    BizCenter 에서 생성한 브랜드 ID                    |
-|     chatbotId     | String |    O   |                    챗봇 ID (A2P의 경우 발신번호와 동일)                   |
-|      display      | String |    X   |                             전시 여부                             |
-|        mdn        | String |    O   |                      등록할 발신번호 (국가번호는 생략)                      |
-|      rcsReply     | String |    O   | <p>수신모드 설정<br><strong></strong>(SMS MO:0, RCS Postback:1)</p> |
-|      service      | String |    X   |                        A2P/CHAT 서비스 유형                        |
-|       subNum      | String |    X   |                    챗봇 ID (A2P의 경우 발신번호와 동일)                   |
-| subNumCertificate |  File  |    O   |                        통신 서비스 이용 증명원 파일                       |
-|      subTitle     | String |    O   |                              챗봇 명                             |
-|      webhook      | String |    X   |            <p>servicer가 chat인 경우 사용<br>(URL 필요)</p>           |
+<table data-header-hidden><thead><tr><th width="210" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="300" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">chatbotId</td><td align="center">String</td><td align="center">O</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center">display</td><td align="center">String</td><td align="center">X</td><td align="center">전시 여부</td></tr><tr><td align="center">mdn</td><td align="center">String</td><td align="center">O</td><td align="center">등록할 발신번호 (국가번호는 생략)</td></tr><tr><td align="center">rcsReply</td><td align="center">String</td><td align="center">O</td><td align="center">수신모드 설정<br>(SMS MO:0, RCS Postback:1)</td></tr><tr><td align="center">service</td><td align="center">String</td><td align="center">X</td><td align="center">A2P/CHAT 서비스 유형</td></tr><tr><td align="center">subNum</td><td align="center">String</td><td align="center">X</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center">subNumCertificate</td><td align="center">File</td><td align="center">O</td><td align="center">통신 서비스 이용 증명원 파일</td></tr><tr><td align="center">subTitle</td><td align="center">String</td><td align="center">O</td><td align="center">챗봇 명</td></tr><tr><td align="center">webhook</td><td align="center">String</td><td align="center">X</td><td align="center">servicer가 chat인 경우 사용<br>(URL 필요)</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |      **-**     |  **타입** |                         **설명**                        |
-| :--------: | :------------: | :-----: | :---------------------------------------------------: |
-|    code    |                |  String |                         결과 코드                         |
-|   message  |                |  String |                      실패 시 결과 메시지                      |
-|    data    |                |  Array  |                        성공 시 데이터                       |
-|            |  approvalDate  |  String |                        챗봇 승인 일시                       |
-|            | approvalReason |  String |                         승인 사유                         |
-|            | approvalResult |  String |                         승인 상태                         |
-|            |    botTcPage   |  String |                 이용 약관 페이지 URL (수정 불가)                 |
-|            |     brandId    |  String |                         브랜드 ID                        |
-|            |    chatbotId   |  String |                챗봇 ID (A2P의 경우 발신번호와 동일)               |
-|            |     display    |  String |                         전시 상태                         |
-|            |     groupId    |  String |                  챗봇이 대량 등록된 경우 그룹 ID                  |
-|            |    isMainNum   | Boolean |                       대표번호 여부 표시                      |
-|            |    mediaUrl    |  Array  |              이미지 파일 ID와 URL 및 사용 유형 정보를 제             |
-|            |  registerDate  |  String |                        챗봇 등록 일시                       |
-|            |   registerId   |  String |                      챗봇 등록 계정 ID                      |
-|            |  searchWeight  |  String |                    검색 우선 순위 (수정 불가)                   |
-|            |     service    |  String |                    A2P/CHAT 서비스 유형                    |
-|            |     subNum     |  String |      <p>회신번호 A2P의 경우 발신번호<br>(chatbotId와 동일)</p>      |
-|            |    subTitle    |  String |                          챗봇 명                         |
-|            |   updateDate   |  String |                        챗봇 수정일시                        |
-|            |    updateId    |  String |                      챗봇 수정 계정 ID                      |
-|            |     webhook    |  String |             service가 chat인 경우 사용 (URL 필수)             |
-| pagination |                |         |                                                       |
-|            |      limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset     | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |      total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="205" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="353" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">챗봇 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유 </td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">botTcPage</td><td align="center">String</td><td align="center">이용 약관 페이지 URL (수정 불가) </td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">chatbotId</td><td align="center">String</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center"></td><td align="center">display</td><td align="center">String</td><td align="center">전시 상태</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">챗봇이 대량 등록된 경우 그룹 ID</td></tr><tr><td align="center"></td><td align="center">isMainNum</td><td align="center">Boolean</td><td align="center">대표번호 여부 표시</td></tr><tr><td align="center"></td><td align="center">mediaUrl</td><td align="center">Array</td><td align="center">이미지 파일 ID와 URL 및 사용 유형 정보를 제</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">챗봇 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">챗봇 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">searchWeight</td><td align="center">String</td><td align="center">검색 우선 순위 (수정 불가)</td></tr><tr><td align="center"></td><td align="center">service</td><td align="center">String</td><td align="center">A2P/CHAT 서비스 유형</td></tr><tr><td align="center"></td><td align="center">subNum</td><td align="center">String</td><td align="center">회신번호 A2P의 경우 발신번호<br>(chatbotId와 동일)</td></tr><tr><td align="center"></td><td align="center">subTitle</td><td align="center">String</td><td align="center">챗봇 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">챗봇 수정일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">챗봇 수정 계정 ID</td></tr><tr><td align="center"></td><td align="center">webhook</td><td align="center">String</td><td align="center">service가 chat인 경우 사용 (URL 필수)</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 챗봇 삭제
 
 * 브랜드 내 지정된 챗봇을 삭제합니다.\
-  챗봇의 삭제는 승인상태에 따라 처리 여부가 결정됩니다. 한번 삭제된 챗봇은 복원이 불가능 하며, 동일한 ID 로 생성할 수 없습니다. (상태: 저장, 반려, 승인)
+  챗봇의 삭제는 승인상태에 따라 처리 여부가 결정됩니다. (상태: 저장, 반려, 승인)
 * **POST** /rcsapi/v1/brand/chatbot/remove
 * Content-Type: application/json; charset=utf-8
 
 **Request**
 
-|   **키**   | **타입** | **필수** |          **설명**         |
-| :-------: | :----: | :----: | :---------------------: |
-|  brandId  | String |    O   | BizCenter 에서 생성한 브랜드 ID |
-| chatbotId | String |    O   |        삭제할 챗봇 ID        |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="260" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">chatbotId</td><td align="center">String</td><td align="center">O</td><td align="center">삭제할 챗봇 ID</td></tr></tbody></table>
 
 **Response**
 
-****
 
-|    **키**   |   **-**   |  **타입** |                         **설명**                        |
-| :--------: | :-------: | :-----: | :---------------------------------------------------: |
-|    code    |           |  String |                         결과 코드                         |
-|   message  |           |  String |                      실패 시 결과 메시지                      |
-|    data    |           |  Array  |                        성공 시 데이터                       |
-|            | chatbotId |  String |         <p>챗봇 ID </p><p>(A2P 의 경우 발번호와 동일)</p>        |
-| pagination |           |         |                                                       |
-|            |   limit   | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |   offset  | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |   total   | Integer |                          총 개수                         |
+
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="279" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">chatbotId</td><td align="center">String</td><td align="center"><p>챗봇 ID </p><p>(A2P 의 경우 발번호와 동일)</p></td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 
 
@@ -131,34 +52,11 @@
 
 **Request**
 
-|  **키**  |  **타입** | **필수** |           **설명**           |
-| :-----: | :-----: | :----: | :------------------------: |
-| brandId |  String |    O   |   BizCenter 에서 생성한 브랜드 ID  |
-|  limit  | Integer |    X   | 조회 최대 건수 (기본:100, 최대:1000) |
-|  offset | Integer |    O   |     시작 offset 번호 (기본:0)    |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="363" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">limit</td><td align="center">Integer</td><td align="center">X</td><td align="center">조회 최대 건수 (기본:100, 최대:1000)</td></tr><tr><td align="center">offset</td><td align="center">Integer</td><td align="center">O</td><td align="center">시작 offset 번호 (기본:0)</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |      **-**     |  **타입** |                         **설명**                        |
-| :--------: | :------------: | :-----: | :---------------------------------------------------: |
-|    code    |                |  String |                         결과 코드                         |
-|   message  |                |  String |                      실패 시 결과 메시지                      |
-|    data    |                |  Array  |                        성공 시 데이터                       |
-|            |  approvalDate  |  String |                        챗봇 승인 일시                       |
-|            | approvalResult |  String |                         승인 상태                         |
-|            |     brandId    |  String |                         브랜드 ID                        |
-|            |    chatbotId   |  String |                챗봇 ID (A2P의 경우 발신번호와 동일)               |
-|            |     display    |  String |                         전시 상태                         |
-|            |     groupId    |  String |                  챗봇이 대량 등록된 경우 그룹 ID                  |
-|            |    isMainNum   | Boolean |                       대표번호 여부 표시                      |
-|            |  registerDate  |  String |                        챗봇 등록 일시                       |
-|            |     subNum     |  String |           회신번호 A2P의 경우 발신번호 (chatbotId와 동일)           |
-|            |    subTitle    |  String |                          챗봇 명                         |
-|            |   updateDate   |  String |                        챗봇 수정일시                        |
-| pagination |                |         |                                                       |
-|            |      limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset     | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |      total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="205" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="242" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">챗봇 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">chatbotId</td><td align="center">String</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center"></td><td align="center">display</td><td align="center">String</td><td align="center">전시 상태</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">챗봇이 대량 등록된 경우 그룹 ID</td></tr><tr><td align="center"></td><td align="center">isMainNum</td><td align="center">Boolean</td><td align="center">대표번호 여부 표시</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">챗봇 등록 일시</td></tr><tr><td align="center"></td><td align="center">subNum</td><td align="center">String</td><td align="center">회신번호 A2P의 경우 발신번호 (chatbotId와 동일)</td></tr><tr><td align="center"></td><td align="center">subTitle</td><td align="center">String</td><td align="center">챗봇 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">챗봇 수정일시</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 챗봇 상세 조회
 
@@ -168,39 +66,9 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |          **설명**         |
-| :-------: | :----: | :----: | :---------------------: |
-|  brandId  | String |    O   | BizCenter 에서 생성한 브랜드 ID |
-| chatbotId | String |    O   |       조회할 대상 챗봇 ID      |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="273" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">chatbotId</td><td align="center">String</td><td align="center">O</td><td align="center">조회할 대상 챗봇 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |      **-**     |  **타입** |                         **설명**                        |
-| :--------: | :------------: | :-----: | :---------------------------------------------------: |
-|    code    |                |  String |                         결과 코드                         |
-|   message  |                |  String |                      실패 시 결과 메시지                      |
-|    data    |                |  Array  |                        성공 시 데이터                       |
-|            |  approvalDate  |  String |                        챗봇 승인 일시                       |
-|            | approvalReason |  String |                         승인 사유                         |
-|            | approvalResult |  String |                         승인 상태                         |
-|            |    botTcPage   |  String |                 이용 약관 페이지 URL (수정 불가)                 |
-|            |     brandId    |  String |                         브랜드 ID                        |
-|            |    chatbotId   |  String |                챗봇 ID (A2P의 경우 발신번호와 동일)               |
-|            |     display    |  String |                         전시 상태                         |
-|            |     groupId    |  String |                  챗봇이 대량 등록된 경우 그룹 ID                  |
-|            |    isMainNum   | Boolean |                       대표번호 여부 표시                      |
-|            |    mediaUrl    |  Array  |              이미지 파일 ID와 URL 및 사용 유형 정보를 제             |
-|            |  registerDate  |  String |                        챗봇 등록 일시                       |
-|            |   registerId   |  String |                      챗봇 등록 계정 ID                      |
-|            |  searchWeight  |  String |                    검색 우선 순위 (수정 불가)                   |
-|            |     service    |  String |                    A2P/CHAT 서비스 유형                    |
-|            |     subNum     |  String |      <p>회신번호 A2P의 경우 발신번호<br>(chatbotId와 동일)</p>      |
-|            |    subTitle    |  String |                          챗봇 명                         |
-|            |   updateDate   |  String |                        챗봇 수정일시                        |
-|            |    updateId    |  String |                      챗봇 수정 계정 ID                      |
-|            |     webhook    |  String |             service가 chat인 경우 사용 (URL 필수)             |
-| pagination |                |         |                                                       |
-|            |      limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset     | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |      total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="205" align="center"></th><th width="158" align="center"></th><th width="150" align="center"></th><th width="353" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">챗봇 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유 </td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">botTcPage</td><td align="center">String</td><td align="center">이용 약관 페이지 URL (수정 불가) </td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">chatbotId</td><td align="center">String</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center"></td><td align="center">display</td><td align="center">String</td><td align="center">전시 상태</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">챗봇이 대량 등록된 경우 그룹 ID</td></tr><tr><td align="center"></td><td align="center">isMainNum</td><td align="center">Boolean</td><td align="center">대표번호 여부 표시</td></tr><tr><td align="center"></td><td align="center">mediaUrl</td><td align="center">Array</td><td align="center">이미지 파일 ID와 URL 및 사용 유형 정보를 제</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">챗봇 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">챗봇 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">searchWeight</td><td align="center">String</td><td align="center">검색 우선 순위 (수정 불가)</td></tr><tr><td align="center"></td><td align="center">service</td><td align="center">String</td><td align="center">A2P/CHAT 서비스 유형</td></tr><tr><td align="center"></td><td align="center">subNum</td><td align="center">String</td><td align="center">회신번호 A2P의 경우 발신번호<br>(chatbotId와 동일)</td></tr><tr><td align="center"></td><td align="center">subTitle</td><td align="center">String</td><td align="center">챗봇 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">챗봇 수정일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">챗봇 수정 계정 ID</td></tr><tr><td align="center"></td><td align="center">webhook</td><td align="center">String</td><td align="center">service가 chat인 경우 사용 (URL 필수)</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
