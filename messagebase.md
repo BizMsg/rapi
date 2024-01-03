@@ -9,30 +9,15 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |                          **설명**                         |
-| :---------------: | :----: | :----: | :-----------------------------------------------------: |
-|      brandId      | String |    O   |                 BizCenter 에서 생성한 브랜드 ID                 |
-|    custTmpltId    | String |    O   | <p>사용자 지정 템플릿 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,25}$)</p> |
-| messagebaseformId | String |    O   |  <p>메시지베이스 폼 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,10}$)</p>  |
-|  formattedString  | Object |    O   |                        메시지베이스 포맷                        |
-|     tmpltName     | String |    O   |                         메시지베이스 명                        |
+<table data-header-hidden><thead><tr><th width="220" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="293" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">custTmpltId</td><td align="center">String</td><td align="center">O</td><td align="center"><p>사용자 지정 템플릿 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,25}$)</p></td></tr><tr><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">O</td><td align="center"><p>메시지베이스 폼 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,10}$)</p></td></tr><tr><td align="center">formattedString</td><td align="center">Object</td><td align="center">O</td><td align="center">메시지베이스 포맷</td></tr><tr><td align="center">tmpltName</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 명</td></tr></tbody></table>
 
-****
+
 
 **Response**
 
-|    **키**   |     **-**     |  **타입** |                         **설명**                        |
-| :--------: | :-----------: | :-----: | :---------------------------------------------------: |
-|    code    |               |  String |                         결과 코드                         |
-|   message  |               |  String |                      실패 시 결과 메시지                      |
-|    data    |               |         |                        성공 시 데이터                       |
-|            | messagebaseId |  String |                       메시지베이스 ID                       |
-| pagination |               |         |                                                       |
-|            |     limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset    | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |     total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="153" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
-****
+
 
 ### 메시지베이스 수정
 
@@ -43,29 +28,13 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |                          **설명**                         |
-| :---------------: | :----: | :----: | :-----------------------------------------------------: |
-|      brandId      | String |    O   |                 BizCenter 에서 생성한 브랜드 ID                 |
-|    custTmpltId    | String |    O   | <p>사용자 지정 템플릿 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,25}$)</p> |
-|   messagebaseId   | String |    O   |                        메시지베이스 ID                        |
-| messagebaseformId | String |    O   |  <p>메시지베이스 폼 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,10}$)</p>  |
-|  formattedString  | Object |    O   |                        메시지베이스 포맷                        |
-|     tmpltName     | String |    O   |                         메시지베이스 명                        |
+<table data-header-hidden><thead><tr><th width="220" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="293" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">custTmpltId</td><td align="center">String</td><td align="center">O</td><td align="center"><p>사용자 지정 템플릿 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,25}$)</p></td></tr><tr><td align="center">messagebaseId</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">O</td><td align="center"><p>메시지베이스 폼 ID</p><p>(정규식패턴: ^[0-9A-Za-z]{1,10}$)</p></td></tr><tr><td align="center">formattedString</td><td align="center">Object</td><td align="center">O</td><td align="center">메시지베이스 포맷</td></tr><tr><td align="center">tmpltName</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 명</td></tr></tbody></table>
 
-****
+
 
 **Response**
 
-|    **키**   |     **-**     |  **타입** |                         **설명**                        |
-| :--------: | :-----------: | :-----: | :---------------------------------------------------: |
-|    code    |               |  String |                         결과 코드                         |
-|   message  |               |  String |                      실패 시 결과 메시지                      |
-|    data    |               |         |                        성공 시 데이터                       |
-|            | messagebaseId |  String |                       메시지베이스 ID                       |
-| pagination |               |         |                                                       |
-|            |     limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset    | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |     total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="153" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 삭제
 
@@ -76,23 +45,11 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |          **설명**         |
-| :-----------: | :----: | :----: | :---------------------: |
-|    brandId    | String |    O   | BizCenter 에서 생성한 브랜드 ID |
-| messagebaseId | String |    O   |        메시지베이스 ID        |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">messagebaseId</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |     **-**     |  **타입** |                         **설명**                        |
-| :--------: | :-----------: | :-----: | :---------------------------------------------------: |
-|    code    |               |  String |                         결과 코드                         |
-|   message  |               |  String |                      실패 시 결과 메시지                      |
-|    data    |               |         |                        성공 시 데이터                       |
-|            | messagebaseId |  String |                       메시지베이스 ID                       |
-| pagination |               |         |                                                       |
-|            |     limit     | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |     offset    | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |     total     | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="153" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 목록 조회
 
@@ -102,38 +59,13 @@
 
 **Request**
 
-|  **키**  |  **타입** | **필수** |                  **설명**                  |
-| :-----: | :-----: | :----: | :--------------------------------------: |
-| brandId |  String |    O   |          BizCenter 에서 생성한 브랜드 ID         |
-|  limit  | Integer |    X   | <p>조회 최대 건수<br>(기본 : 100, 최대 : 1000)</p> |
-|  offset | Integer |    X   |            시작 offset 번호 (기본:0)           |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">limit</td><td align="center">Integer</td><td align="center">X</td><td align="center">조회 최대 건수<br>(기본 : 100, 최대 : 1000)</td></tr><tr><td align="center">offset</td><td align="center">Integer</td><td align="center">X</td><td align="center">시작 offset 번호 (기본:0)</td></tr></tbody></table>
 
-****
+
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                         **설명**                        |
-| :--------: | :---------------: | :-----: | :---------------------------------------------------: |
-|    code    |                   |  String |                         결과 코드                         |
-|   message  |                   |  String |                      실패 시 결과 메시지                      |
-|    data    |                   |         |                        성공 시 데이터                       |
-|            |    approvalDate   |  String |                      메시지베이스 승인 일시                     |
-|            |   approvalReason  |  String |                         승인 사유                         |
-|            |   approvalResult  |  String |                         승인 상태                         |
-|            |      brandId      |  String |                         브랜드 ID                        |
-|            |      groupId      |  String |                         그룹 ID                         |
-|            |   messagebaseId   |  String |                       메시지베이스 ID                       |
-|            | messagebaseformId |  String |                      메시지베이스 폼 ID                      |
-|            |    registerDate   |  String |                      메시지베이스 등록 일시                     |
-|            |     registerId    |  String |                    메시지베이스 등록 계정 ID                    |
-|            |       status      |  String |                       메시지베이스 상태                       |
-|            |     tmpltName     |  String |                        메시지베이스 명                       |
-|            |     updateDate    |  String |                      메시지베이스 수정 일시                     |
-|            |      updateId     |  String |                    메시지베이스 수정 계정 ID                    |
-| pagination |                   |         |                                                       |
-|            |       limit       | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |       offset      | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |       total       | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="195.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">메시지베이스 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">그룹 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">메시지베이스 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">메시지베이스 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">status</td><td align="center">String</td><td align="center">메시지베이스 상태</td></tr><tr><td align="center"></td><td align="center">tmpltName</td><td align="center">String</td><td align="center">메시지베이스 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">메시지베이스 수정 일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">메시지베이스 수정 계정 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 상세 조회
 
@@ -145,44 +77,11 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |          **설명**         |
-| :-----------: | :----: | :----: | :---------------------: |
-|    brandId    | String |    O   | BizCenter 에서 생성한 브랜드 ID |
-| messagebaseId | String |    O   |        메시지베이스 ID        |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">messagebaseId</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                         **설명**                        |
-| :--------: | :---------------: | :-----: | :---------------------------------------------------: |
-|    code    |                   |  String |                         결과 코드                         |
-|   message  |                   |  String |                      실패 시 결과 메시지                      |
-|    data    |                   |         |                        성공 시 데이터                       |
-|            |      agecyId      |  String |                                                       |
-|            |    approvalDate   |  String |                      메시지베이스 승인 일시                     |
-|            |   approvalReason  |  String |                         승인 사유                         |
-|            |   approvalResult  |  String |                         승인 상태                         |
-|            |     attribute     |  Array  |                                                       |
-|            |      brandId      |  String |                         브랜드 ID                        |
-|            |      cardType     |  String |            카드 종류 (Cell, Description, Free)            |
-|            |  formattedString  |  Object |                       메시지베이스 포맷                       |
-|            |      groupId      |  String |                         그룹 ID                         |
-|            |     guideInfo     |  Object |                                                       |
-|            |     inputText     |  String |                                                       |
-|            |   messagebaseId   |  String |                       메시지베이스 ID                       |
-|            | messagebaseformId |  String |                      메시지베이스 폼 ID                      |
-|            |       params      |  Array  |                                                       |
-|            |     policyInfo    |  Object |                                                       |
-|            |    registerDate   |  String |                      메시지베이스 등록 일시                     |
-|            |     registerId    |  String |                    메시지베이스 등록 계정 ID                    |
-|            |        spec       |  String |                                                       |
-|            |       status      |  String |                       메시지베이스 상태                       |
-|            |     tmpltName     |  String |                        메시지베이스 명                       |
-|            |     updateDate    |  String |                      메시지베이스 수정 일시                     |
-|            |      updateId     |  String |                    메시지베이스 수정 계정 ID                    |
-| pagination |                   |         |                                                       |
-|            |       limit       | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |       offset      | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |       total       | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="195.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">agecyId</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">메시지베이스 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">attribute</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">cardType</td><td align="center">String</td><td align="center">카드 종류 (Cell, Description, Free)</td></tr><tr><td align="center"></td><td align="center">formattedString</td><td align="center">Object</td><td align="center">메시지베이스 포맷 </td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">그룹 ID</td></tr><tr><td align="center"></td><td align="center">guideInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">inputText</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">params</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">policyInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">메시지베이스 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">메시지베이스 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">spec</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">status</td><td align="center">String</td><td align="center">메시지베이스 상태</td></tr><tr><td align="center"></td><td align="center">tmpltName</td><td align="center">String</td><td align="center">메시지베이스 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">메시지베이스 수정 일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">메시지베이스 수정 계정 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 
 
@@ -194,34 +93,11 @@
 
 **Request**
 
-|     **키**    |  **타입** | **필수** |                           **설명**                          |
-| :----------: | :-----: | :----: | :-------------------------------------------------------: |
-|  bizCategory |  String |    X   | <p>유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</p> |
-| bizCondition |  String |    X   |                      대상 업태 (기본: all)                      |
-|  bizService  |  String |    X   |                     유형 (승인, 입금, 출금 등)                     |
-|   cardType   |  String |    X   |         <p>카드 종류<br>(Cell, Description, Free)</p>         |
-|     limit    | Integer |    X   |          <p>조회 최대 건수<br>(기본 : 100, 최대 : 1000)</p>         |
-|    offset    | Integer |    X   |                    시작 offset 번호 (기본:0)                    |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizCategory</td><td align="center">String</td><td align="center">X</td><td align="center">유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</td></tr><tr><td align="center">bizCondition</td><td align="center">String</td><td align="center">X</td><td align="center">대상 업태 (기본: all)</td></tr><tr><td align="center">bizService</td><td align="center">String</td><td align="center">X</td><td align="center">유형 (승인, 입금, 출금 등)</td></tr><tr><td align="center">cardType</td><td align="center">String</td><td align="center">X</td><td align="center">카드 종류<br>(Cell, Description, Free)</td></tr><tr><td align="center">limit</td><td align="center">Integer</td><td align="center">X</td><td align="center">조회 최대 건수<br>(기본 : 100, 최대 : 1000)</td></tr><tr><td align="center">offset</td><td align="center">Integer</td><td align="center">X</td><td align="center">시작 offset 번호 (기본:0)</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                           **설명**                          |
-| :--------: | :---------------: | :-----: | :-------------------------------------------------------: |
-|    code    |                   |  String |                           결과 코드                           |
-|   message  |                   |  String |                        실패 시 결과 메시지                        |
-|    data    |                   |         |                          성공 시 데이터                         |
-|            |    bizCategory    |  String | <p>유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</p> |
-|            |    bizCondition   |  Array  |                      대상 업태 (기본: all)                      |
-|            |     bizService    |  String |                     유형 (승인, 입금, 출금 등)                     |
-|            |      cardType     |  String |              카드 종류 (Cell, Description, Free)              |
-|            |      formName     |  String |                            폼 명                            |
-|            | messagebaseformId |  String |                        메시지베이스 폼 ID                        |
-|            |    registerDate   |  String |                           등록 일자                           |
-|            |     updateDate    |  String |                           수정 일자                           |
-| pagination |                   |         |                                                           |
-|            |       limit       | Integer |   <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p>   |
-|            |       offset      | Integer |                    시작 offset 번호 (기본:0)                    |
-|            |       total       | Integer |                            총 개수                           |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="190.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">bizCategory</td><td align="center">String</td><td align="center">유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</td></tr><tr><td align="center"></td><td align="center">bizCondition</td><td align="center">Array</td><td align="center">대상 업태 (기본: all)</td></tr><tr><td align="center"></td><td align="center">bizService</td><td align="center">String</td><td align="center">유형 (승인, 입금, 출금 등)</td></tr><tr><td align="center"></td><td align="center">cardType</td><td align="center">String</td><td align="center">카드 종류 (Cell, Description, Free)</td></tr><tr><td align="center"></td><td align="center">formName</td><td align="center">String</td><td align="center">폼 명</td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">등록 일자</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">수정 일자</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 유형 상세 조회
 
@@ -232,36 +108,11 @@
 
 **Request**
 
-|       **키**       | **타입** | **필수** |   **설명**  |
-| :---------------: | :----: | :----: | :-------: |
-| messagebaseformId | String |    O   | 메시지베이스 ID |
+<table data-header-hidden><thead><tr><th width="221.46361185983827" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="193" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                           **설명**                          |
-| :--------: | :---------------: | :-----: | :-------------------------------------------------------: |
-|    code    |                   |  String |                           결과 코드                           |
-|   message  |                   |  String |                        실패 시 결과 메시지                        |
-|    data    |                   |         |                          성공 시 데이터                         |
-|            |    bizCategory    |  String | <p>유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</p> |
-|            |    bizCondition   |  Array  |                      대상 업태 (기본: all)                      |
-|            |     bizService    |  String |                     유형 (승인, 입금, 출금 등)                     |
-|            |      cardType     |  String |              카드 종류 (Cell, Description, Free)              |
-|            |      formName     |  String |                            폼 명                            |
-|            |  formattedString  |  Object |                         메시지베이스 포맷                         |
-|            |     guideInfo     |  Object |                                                           |
-|            |      mediaUrl     |  Array  |                                                           |
-|            | messagebaseformId |  String |                        메시지베이스 폼 ID                        |
-|            |       params      |  Array  |                                                           |
-|            |     policyInfo    |  Object |                                                           |
-|            |    productCode    |  String |                                                           |
-|            |        spec       |  String |                                                           |
-|            |    registerDate   |  String |                           등록 일자                           |
-|            |     updateDate    |  String |                           수정 일자                           |
-| pagination |                   |         |                                                           |
-|            |       limit       | Integer |   <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p>   |
-|            |       offset      | Integer |                    시작 offset 번호 (기본:0)                    |
-|            |       total       | Integer |                            총 개수                           |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="190.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">bizCategory</td><td align="center">String</td><td align="center">유형 그룹<br>(Description, Cell 에서만 사용 / 일반, 금용, 교통 등)</td></tr><tr><td align="center"></td><td align="center">bizCondition</td><td align="center">Array</td><td align="center">대상 업태 (기본: all)</td></tr><tr><td align="center"></td><td align="center">bizService</td><td align="center">String</td><td align="center">유형 (승인, 입금, 출금 등)</td></tr><tr><td align="center"></td><td align="center">cardType</td><td align="center">String</td><td align="center">카드 종류 (Cell, Description, Free)</td></tr><tr><td align="center"></td><td align="center">formName</td><td align="center">String</td><td align="center">폼 명</td></tr><tr><td align="center"></td><td align="center">formattedString</td><td align="center">Object</td><td align="center">메시지베이스 포맷</td></tr><tr><td align="center"></td><td align="center">guideInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">mediaUrl</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">params</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">policyInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">productCode</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">spec</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">등록 일자</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">수정 일자</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 조회 (이통사 기본 제공)
 
@@ -273,37 +124,11 @@
 
 **Request**
 
-|    **키**    |  **타입** | **필수** |                                                    **설명**                                                   |
-| :---------: | :-----: | :----: | :---------------------------------------------------------------------------------------------------------: |
-|   cardType  |  String |    X   | <p>카드 종류 <br>(standalone, standalone media top, standalone horizontal, carousel medium, carousel small)</p> |
-| productCode |  String |    X   |                                            상품 코드 (sms, lms, mms)                                            |
-|    limit    | Integer |    X   |                                   <p>조회 최대 건수<br>(기본 : 100, 최대 : 1000)</p>                                  |
-|    offset   | Integer |    X   |                                             시작 offset 번호 (기본:0)                                             |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">cardType</td><td align="center">String</td><td align="center">X</td><td align="center">카드 종류 <br>(standalone, standalone media top, standalone horizontal, carousel medium, carousel small)</td></tr><tr><td align="center">productCode</td><td align="center">String</td><td align="center">X</td><td align="center">상품 코드 (sms, lms, mms)</td></tr><tr><td align="center">limit</td><td align="center">Integer</td><td align="center">X</td><td align="center">조회 최대 건수<br>(기본 : 100, 최대 : 1000)</td></tr><tr><td align="center">offset</td><td align="center">Integer</td><td align="center">X</td><td align="center">시작 offset 번호 (기본:0)</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                         **설명**                        |
-| :--------: | :---------------: | :-----: | :---------------------------------------------------: |
-|    code    |                   |  String |                         결과 코드                         |
-|   message  |                   |  String |                      실패 시 결과 메시지                      |
-|    data    |                   |         |                        성공 시 데이터                       |
-|            |    approvalDate   |  String |                      메시지베이스 승인 일시                     |
-|            |   approvalReason  |  String |                         승인 사유                         |
-|            |   approvalResult  |  String |                         승인 상태                         |
-|            |      brandId      |  String |                         브랜드 ID                        |
-|            |      groupId      |  String |                         그룹 ID                         |
-|            |   messagebaseId   |  String |                       메시지베이스 ID                       |
-|            | messagebaseformId |  String |                      메시지베이스 폼 ID                      |
-|            |    registerDate   |  String |                      메시지베이스 등록 일시                     |
-|            |     registerId    |  String |                    메시지베이스 등록 계정 ID                    |
-|            |       status      |  String |                       메시지베이스 상태                       |
-|            |     tmpltName     |  String |                        메시지베이스 명                       |
-|            |     updateDate    |  String |                      메시지베이스 수정 일시                     |
-|            |      updateId     |  String |                    메시지베이스 수정 계정 ID                    |
-| pagination |                   |         |                                                       |
-|            |       limit       | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |       offset      | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |       total       | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="195.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">메시지베이스 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">그룹 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">메시지베이스 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">메시지베이스 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">status</td><td align="center">String</td><td align="center">메시지베이스 상태</td></tr><tr><td align="center"></td><td align="center">tmpltName</td><td align="center">String</td><td align="center">메시지베이스 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">메시지베이스 수정 일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">메시지베이스 수정 계정 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 ### 메시지베이스 상세 조회 (이통사 기본 제공)
 
@@ -316,40 +141,8 @@
 
 **Request**
 
-|     **키**     | **타입** | **필수** |   **설명**  |
-| :-----------: | :----: | :----: | :-------: |
-| messagebaseId | String |    O   | 메시지베이스 ID |
+<table data-header-hidden><thead><tr><th width="181" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="261" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">messagebaseId</td><td align="center">String</td><td align="center">O</td><td align="center">메시지베이스 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |       **-**       |  **타입** |                         **설명**                        |
-| :--------: | :---------------: | :-----: | :---------------------------------------------------: |
-|    code    |                   |  String |                         결과 코드                         |
-|   message  |                   |  String |                      실패 시 결과 메시지                      |
-|    data    |                   |         |                        성공 시 데이터                       |
-|            |      agecyId      |  String |                                                       |
-|            |    approvalDate   |  String |                      메시지베이스 승인 일시                     |
-|            |   approvalReason  |  String |                         승인 사유                         |
-|            |   approvalResult  |  String |                         승인 상태                         |
-|            |     attribute     |  Array  |                                                       |
-|            |      brandId      |  String |                         브랜드 ID                        |
-|            |      cardType     |  String |            카드 종류 (Cell, Description, Free)            |
-|            |  formattedString  |  Object |                       메시지베이스 포맷                       |
-|            |      groupId      |  String |                         그룹 ID                         |
-|            |     guideInfo     |  Object |                                                       |
-|            |     inputText     |  String |                                                       |
-|            |   messagebaseId   |  String |                       메시지베이스 ID                       |
-|            | messagebaseformId |  String |                      메시지베이스 폼 ID                      |
-|            |       params      |  Array  |                                                       |
-|            |     policyInfo    |  Object |                                                       |
-|            |    registerDate   |  String |                      메시지베이스 등록 일시                     |
-|            |     registerId    |  String |                    메시지베이스 등록 계정 ID                    |
-|            |        spec       |  String |                                                       |
-|            |       status      |  String |                       메시지베이스 상태                       |
-|            |     tmpltName     |  String |                        메시지베이스 명                       |
-|            |     updateDate    |  String |                      메시지베이스 수정 일시                     |
-|            |      updateId     |  String |                    메시지베이스 수정 계정 ID                    |
-| pagination |                   |         |                                                       |
-|            |       limit       | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |       offset      | Integer |                  시작 offset 번호 (기본:0)                  |
-|            |       total       | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="195.98765432098767" align="center"></th><th width="150" align="center"></th><th width="276" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center"></td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">agecyId</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">approvalDate</td><td align="center">String</td><td align="center">메시지베이스 승인 일시</td></tr><tr><td align="center"></td><td align="center">approvalReason</td><td align="center">String</td><td align="center">승인 사유</td></tr><tr><td align="center"></td><td align="center">approvalResult</td><td align="center">String</td><td align="center">승인 상태</td></tr><tr><td align="center"></td><td align="center">attribute</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">brandId</td><td align="center">String</td><td align="center">브랜드 ID</td></tr><tr><td align="center"></td><td align="center">cardType</td><td align="center">String</td><td align="center">카드 종류 (Cell, Description, Free)</td></tr><tr><td align="center"></td><td align="center">formattedString</td><td align="center">Object</td><td align="center">메시지베이스 포맷</td></tr><tr><td align="center"></td><td align="center">groupId</td><td align="center">String</td><td align="center">그룹 ID</td></tr><tr><td align="center"></td><td align="center">guideInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">inputText</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">messagebaseId</td><td align="center">String</td><td align="center">메시지베이스 ID</td></tr><tr><td align="center"></td><td align="center">messagebaseformId</td><td align="center">String</td><td align="center">메시지베이스 폼 ID</td></tr><tr><td align="center"></td><td align="center">params</td><td align="center">Array</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">policyInfo</td><td align="center">Object</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">registerDate</td><td align="center">String</td><td align="center">메시지베이스 등록 일시</td></tr><tr><td align="center"></td><td align="center">registerId</td><td align="center">String</td><td align="center">메시지베이스 등록 계정 ID</td></tr><tr><td align="center"></td><td align="center">spec</td><td align="center">String</td><td align="center"></td></tr><tr><td align="center"></td><td align="center">status</td><td align="center">String</td><td align="center">메시지베이스 상태</td></tr><tr><td align="center"></td><td align="center">tmpltName</td><td align="center">String</td><td align="center">메시지베이스 명</td></tr><tr><td align="center"></td><td align="center">updateDate</td><td align="center">String</td><td align="center">메시지베이스 수정 일시</td></tr><tr><td align="center"></td><td align="center">updateId</td><td align="center">String</td><td align="center">메시지베이스 수정 계정 ID</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호 (기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
