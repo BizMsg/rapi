@@ -17,6 +17,11 @@
 
 ### 챗봇 수정
 
+* 브랜드 내에서 사용할 챗봇을 수정합니다.\
+  챗봇 수정은 승인 상태에 따라 처리 여부가 결정됩니다. (상태: 저장, 반려, 승인)
+* **POST** /rcsapi/v1/brand/chatbot/update
+* **Content-Type**: multipart/form-data
+
 **Request**
 
 <table data-header-hidden><thead><tr><th width="210" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="300" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">chatbotId</td><td align="center">String</td><td align="center">O</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center">display</td><td align="center">String</td><td align="center">X</td><td align="center">전시 여부</td></tr><tr><td align="center">mdn</td><td align="center">String</td><td align="center">O</td><td align="center">등록할 발신번호 (국가번호는 생략)</td></tr><tr><td align="center">rcsReply</td><td align="center">String</td><td align="center">O</td><td align="center">수신모드 설정<br>(SMS MO:0, RCS Postback:1)</td></tr><tr><td align="center">service</td><td align="center">String</td><td align="center">X</td><td align="center">A2P/CHAT 서비스 유형</td></tr><tr><td align="center">subNum</td><td align="center">String</td><td align="center">X</td><td align="center">챗봇 ID (A2P의 경우 발신번호와 동일)</td></tr><tr><td align="center">subNumCertificate</td><td align="center">File</td><td align="center">O</td><td align="center">통신 서비스 이용 증명원 파일</td></tr><tr><td align="center">subTitle</td><td align="center">String</td><td align="center">O</td><td align="center">챗봇 명</td></tr><tr><td align="center">webhook</td><td align="center">String</td><td align="center">X</td><td align="center">servicer가 chat인 경우 사용<br>(URL 필요)</td></tr></tbody></table>
