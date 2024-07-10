@@ -26,7 +26,7 @@
 
 **Request**
 
-<table data-header-hidden><thead><tr><th width="177" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="424" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter에서 생성한 브랜드 ID</td></tr><tr><td align="center">brandKey</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter에서 기업 관리자가 발급하여 대행사에 전달한<br>브랜드 Key</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="177" align="center">Text</th><th width="150" align="center"></th><th width="150" align="center">필수</th><th width="424" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter에서 생성한 브랜드 ID</td></tr></tbody></table>
 
 
 
