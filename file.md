@@ -8,52 +8,27 @@
 
 **Request**
 
-|   **키**   | **타입** | **필수** |                      **설명**                     |
-| :-------: | :----: | :----: | :---------------------------------------------: |
-|    file   |  File  |    O   |                      업로드 파일                     |
-|   fileId  | String |    O   |                      파일 ID                      |
-|  mimeType | String |    O   |   <p>Mime type<br>(image/jpeg, image/png…)</p>  |
-| usageType | String |    O   | <p>사용 타입</p><p>(chatbot, messagebase, send)</p> |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="284" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">file</td><td align="center">File</td><td align="center">O</td><td align="center">업로드 파일</td></tr><tr><td align="center">fileId</td><td align="center">String</td><td align="center">O</td><td align="center">파일 ID</td></tr><tr><td align="center">mimeType</td><td align="center">String</td><td align="center">O</td><td align="center">Mime type<br>(image/jpeg, image/png…)</td></tr><tr><td align="center">usageType</td><td align="center">String</td><td align="center">O</td><td align="center"><p>사용 타입</p><p>(chatbot, messagebase, send)</p></td></tr></tbody></table>
 
 **Response**
 
-|    Code    | String |                 결과 코드                 |
-| :--------: | :----: | :-----------------------------------: |
-|   Message  | String |              실패 시 결과 메시지              |
-|    data    |        |  <p>파일 상세 조회<br>(파일 상세조회 반환 값 참조)</p> |
-| pagination |        | <p>페이지 상세 조회<br>(파일 상세조회 반환 값 참조)</p> |
+<table data-header-hidden><thead><tr><th align="center"></th><th width="150" align="center"></th><th width="358" align="center"></th></tr></thead><tbody><tr><td align="center">Code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">Message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">파일 상세 조회<br>(파일 상세조회 반환 값 참조)</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center">페이지 상세 조회<br>(파일 상세조회 반환 값 참조)</td></tr></tbody></table>
 
 ### 파일 상세 조회
 
 * Maap 미디어 파일을 조회합니다.
 * **GET** /rcsapi/v1/file/info
-* Content-Type: application/json; charset=utf-8
+* Query Parameter
 
 **Request**
 
-****
 
-|  **키**  | **타입** | **필수** |        **설명**        |
-| :-----: | :----: | :----: | :------------------: |
-| comCode | String |    O   | 통신사 코드 (SKT, KT, U+) |
-|  fileId | String |    O   |         파일 ID        |
+
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="273" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">comCode</td><td align="center">String</td><td align="center">O</td><td align="center">통신사 코드 (SKT, KT, LGU)</td></tr><tr><td align="center">fileId</td><td align="center">String</td><td align="center">O</td><td align="center">파일 ID</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   |    **-**   |  **타입** |                         **설명**                        |
-| :--------: | :--------: | :-----: | :---------------------------------------------------: |
-|    code    |            |  String |                         결과 코드                         |
-|   message  |            |  String |                      실패 시 결과 메시지                      |
-|    data    |            |  Array  |                        성공 시 데이터                       |
-|            | expiryDate |  String |                         유효 기간                         |
-|            |   fileId   |  String |                         파일 ID                         |
-|            |  mimeType  |  String |      <p>Mime type<br>(image/jpeg, image/png)</p>      |
-|            |   Status   |  String |            <p>파일 상태<br>(ready, expired)</p>           |
-|            |  usageType |  String |      <p>사용 타입<br>(chatbot, messagebase, send)</p>     |
-| pagination |            |         |                                                       |
-|            |    limit   | Integer | <p>조회 최대 건수<br><strong></strong>(기본:100, 최대:1000)</p> |
-|            |   offset   | Integer |             <p>시작 offset 번호<br>(기본:0)</p>             |
-|            |    total   | Integer |                          총 개수                         |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="279" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">expiryDate</td><td align="center">String</td><td align="center">유효 기간</td></tr><tr><td align="center"></td><td align="center">fileId</td><td align="center">String</td><td align="center">파일 ID</td></tr><tr><td align="center"></td><td align="center">mimeType</td><td align="center">String</td><td align="center">Mime type<br>(image/jpeg, image/png)</td></tr><tr><td align="center"></td><td align="center">Status</td><td align="center">String</td><td align="center">파일 상태<br>(ready, expired)</td></tr><tr><td align="center"></td><td align="center">usageType</td><td align="center">String</td><td align="center">사용 타입<br>(chatbot, messagebase, send)</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center"></td><td align="center"></td></tr><tr><td align="center"></td><td align="center">limit</td><td align="center">Integer</td><td align="center">조회 최대 건수<br>(기본:100, 최대:1000)</td></tr><tr><td align="center"></td><td align="center">offset</td><td align="center">Integer</td><td align="center">시작 offset 번호<br>(기본:0)</td></tr><tr><td align="center"></td><td align="center">total</td><td align="center">Integer</td><td align="center">총 개수</td></tr></tbody></table>
 
 
 
