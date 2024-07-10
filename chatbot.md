@@ -53,7 +53,7 @@
 
 * 브랜드 내에 등록된 챗봇 목록을 조회합니다.
 * **GET** /rcsapi/v1/brand/chatbot/list
-* Content-Type: application/json; charset=utf-8
+* Query Parameter
 
 **Request**
 
@@ -67,7 +67,7 @@
 
 * 브랜드에 등록된 챗봇 상세 내역을 조회합니다.
 * **GET** /rcsapi/v1/brand/chatbot/info
-* Content-Type: application/json; charset=utf-8
+* Query Parameter
 
 **Request**
 
