@@ -9,23 +9,11 @@
 
 **Request**
 
-|  **키** | **타입** | **필수** |    **설명**    |
-| :----: | :----: | :----: | :----------: |
-|  bizId | String |    O   | BIZPPURIO ID |
-| apiKey | String |    O   |   API 발급 키   |
+<table data-header-hidden><thead><tr><th width="177" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="242" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">bizId</td><td align="center">String</td><td align="center">O</td><td align="center">BIZPPURIO ID</td></tr><tr><td align="center">apiKey</td><td align="center">String</td><td align="center">O</td><td align="center">API 발급 키</td></tr></tbody></table>
 
 **Response**
 
-|    **키**    |              |  **타입** |    **설명**   |
-| :---------: | :----------: | :-----: | :---------: |
-|     code    |              |  String |    결과 코드    |
-|   message   |              |  String |     총 개수    |
-|  totalCount |              | Integer |   총 페이지 수   |
-| currentPage |              | Integer |    현재 페이지   |
-|     data    |              |  Array  | 성공 시 템플릿 목록 |
-|             |  accessToken |  String |    인증 토큰    |
-|             |   expiresIn  |  String |    만료 시간    |
-|             | refreshToken |  String |   리프레시 토큰   |
+<table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="208" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">총 개수</td></tr><tr><td align="center">totalCount</td><td align="center"></td><td align="center">Integer</td><td align="center">총 페이지 수</td></tr><tr><td align="center">currentPage</td><td align="center"></td><td align="center">Integer</td><td align="center">현재 페이지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 템플릿 목록</td></tr><tr><td align="center"></td><td align="center">accessToken</td><td align="center">String</td><td align="center">인증 토큰</td></tr><tr><td align="center"></td><td align="center">expiresIn</td><td align="center">String</td><td align="center">만료 시간</td></tr><tr><td align="center"></td><td align="center">refreshToken</td><td align="center">String</td><td align="center">리프레시 토큰 </td></tr></tbody></table>
 
 
 
@@ -66,17 +54,9 @@
 
 **Request**
 
-|   **키**  | **타입** | **필수** |                   **설명**                   |
-| :------: | :----: | :----: | :----------------------------------------: |
-|  brandId | String |    O   |           BizCenter에서 생성한 브랜드 ID           |
-| brandKey | String |    O   | BizCenter 에서 기업 관리자가 발급하여 대행사에 전달한 브랜드 Key |
+<table data-header-hidden><thead><tr><th width="177" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="405" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter에서 생성한 브랜드 ID</td></tr><tr><td align="center">brandKey</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 기업 관리자가 발급하여 대행사에 전달한 브랜드 Key</td></tr></tbody></table>
 
 **Response**
 
-|    **키**   | **타입** |                   **설명**                  |
-| :--------: | :----: | :---------------------------------------: |
-|    code    | String |                   결과 코드                   |
-|   message  | String |                실패 시 결과 메시지                |
-|    data    |        | <p>브랜드 상세 조회<br>(브랜드 연동 상세조회 반환 값 참조)</p> |
-| pagination |        | <p>페이지 상세 조회<br>(브랜드 연동 상세조회 반환 값 참조)</p> |
+<table data-header-hidden><thead><tr><th align="center">Text</th><th width="167.33333333333331" align="center"></th><th align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">브랜드 상세 조회<br>(브랜드 연동 상세조회 반환 값 참조)</td></tr><tr><td align="center">pagination</td><td align="center"></td><td align="center">페이지 상세 조회<br>(브랜드 연동 상세조회 반환 값 참조)</td></tr></tbody></table>
 
