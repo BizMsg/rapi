@@ -86,7 +86,7 @@
 * 템플릿에 버튼을 설정하는 경우 지정합니다.                                                                                                         이통사 발송규격에서 제공되는 buttons와 동일한 사용 방식으로 템플릿에 표시되는 버튼을 지정할수 있습니다.&#x20;
 * 이미지 템플릿 슬라이드형의 경우 buttons 배열 내 object가 각 카드에 해당하며, object 하위 suggestions 배열 내에 messagebaseform의 policyInfo.maxButtonCount 지정 숫자만큼 버튼을 등록할 수 있습니다.&#x20;
 
-<table data-header-hidden><thead><tr><th width="149" align="center"></th><th width="234" align="center"></th><th width="293" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">suggestions</td><td align="center">attay of 'suggestions'</td><td align="center">*<strong>SUGGESTIONS</strong> 참조</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="149" align="center"></th><th width="234" align="center"></th><th width="293" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">suggestions</td><td align="center">array of 'suggestions'</td><td align="center">*<strong>SUGGESTIONS</strong> 참조</td></tr></tbody></table>
 
 ## **SUGGESTIONS**
 
