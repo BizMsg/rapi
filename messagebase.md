@@ -55,10 +55,7 @@
 ### 메시지베이스 수정 v2
 
 * 이미 등록된 템플릿의 내용을 수정합니다.\
-  messagebase의 ID를 유지하면서 내용을 변경하고자 하는 경우 사용이 가능합니다.&#x20;
-
-&#x20;     수정 등록된 템플릿은 RCS Biz Center 운영자의 승인이 필요합니다.
-
+  messagebase의 ID를 유지하면서 내용을 변경하고자 하는 경우 사용이 가능합니다.                               수정 등록된 템플릿은 RCS Biz Center 운영자의 승인이 필요합니다.
 * **POST** /rcsapi/v1/brand/msgbase/v2/update
 * Content-Type: application/json; charset=utf-8
 
