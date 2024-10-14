@@ -54,6 +54,10 @@
 
 <table data-header-hidden><thead><tr><th width="150" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="273" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>필수</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">brandId</td><td align="center">String</td><td align="center">O</td><td align="center">BizCenter 에서 생성한 브랜드 ID</td></tr><tr><td align="center">file</td><td align="center">File</td><td align="center">O</td><td align="center">업로드 파일</td></tr></tbody></table>
 
+**Response**
+
+<table data-header-hidden><thead><tr><th width="153.90946502057614" align="center"></th><th width="150" align="center"></th><th width="150" align="center"></th><th width="279" align="center"></th></tr></thead><tbody><tr><td align="center"><strong>키</strong></td><td align="center"><strong>-</strong></td><td align="center"><strong>타입</strong></td><td align="center"><strong>설명</strong></td></tr><tr><td align="center">code</td><td align="center"></td><td align="center">String</td><td align="center">결과 코드</td></tr><tr><td align="center">message</td><td align="center"></td><td align="center">String</td><td align="center">실패 시 결과 메시지</td></tr><tr><td align="center">data</td><td align="center"></td><td align="center">Array</td><td align="center">성공 시 데이터</td></tr><tr><td align="center"></td><td align="center">fileId</td><td align="center">String</td><td align="center">등록된 파일의 ID</td></tr></tbody></table>
+
 ### RCS MMS 이미지 규격&#x20;
 
 ![](<.gitbook/assets/image (5).png>)
