@@ -94,13 +94,15 @@
 
 ## **ACTION**
 
-* action의 displayText, postback을 제외한 action 하위 항목에 다음과 같이 변수부를 지정할 수 있습니다.
-
-
+* action의 displayText, postback을 제외한 action 하위 항목에 다음과 같이 변수부를 지정할 수 있습니다.&#x20;
 
 <figure><img src=".gitbook/assets/rcs_action.png" alt=""><figcaption></figcaption></figure>
 
+※ API 등록 시 각 Action 구분 별 <mark style="color:red;">**postback.data**</mark>를 반드시 삽입해서 등록해야 합니다.
 
+ACTION 규격 Examples
+
+<figure><img src=".gitbook/assets/ACTION예시.png" alt=""><figcaption></figcaption></figure>
 
 ### 메시지베이스 삭제
 
